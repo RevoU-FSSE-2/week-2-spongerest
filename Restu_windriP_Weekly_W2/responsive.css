@@ -1,0 +1,49 @@
+@media (max-width:768px)
+{
+    .menu
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+        background-color: var(--bg-shockingpink);
+        border-left: 2px solid var(--bg---bg-limegreen);
+    }
+    .menu li
+    {
+        margin-top: 40px;
+    }
+    .menu li a
+    {
+        padding: 10px;
+    }
+    .open-menu,.close-menu
+    {
+        display: block;
+    }
+    #check:checked ~ .menu
+    {
+        right: 0;
+    }
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portofolio .portofolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info,
+    .about .about-content .personal-info .info-item,
+    .video .video-heading,
+    .video .video-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

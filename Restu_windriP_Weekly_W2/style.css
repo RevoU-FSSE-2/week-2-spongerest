@@ -1,0 +1,580 @@
+@font-face
+{
+    font-family: "slaytanic";
+    src: url(./font/slaytanic.regular.ttf);
+}
+:root
+{
+    --bg---bg-limegreen : #32CD32;
+    --bg-shockingpink : #fc0fc0;
+    --bg-blue : #9cdaff;
+    --bg-yellow : #F0E27B;
+    --bg-black : #0a0044;
+    --bg-white : #e3e1e4;
+    --bg-red : #ff2941
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.section
+{
+    background: var(--bg-yellow);
+    /* min-height: 100vh; */
+    opacity: 1;
+    margin: 0;
+}
+section.full-screen 
+{
+    margin: 0;
+}
+.padd-15
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container
+{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+.section .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: var(--bg-shockingpink);
+    font-weight: 700;
+    position: relative;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+.btn
+{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: var(--bg-blue);
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--bg-shockingpink);
+    transition: all 0.3s ease;
+}
+.btn:hover
+{
+    transform: scale(1.05);
+}
+.shadow-dark
+{
+    box-shadow: 0 0 20px rgba(50,205,50);
+}
+.nav-bar
+{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: var(--bg-shockingpink);
+    border-bottom: 2px solid var(--bg---bg-limegreen);
+    padding: 12px 20px;
+    height: 52px;
+    z-index: 100;
+}
+.logo
+{
+    display: flex;
+    padding-right:10px ;
+}
+.logo h2 span
+{
+    font-family: "slaytanic";
+    font-size: 32px;
+    width: 100%;
+    background-color: var(--bg-yellow);
+    color: var(--bg-shockingpink);
+    border-radius: 5px;
+    justify-content: center;  
+}
+.logo b
+{
+    font-size: 20px;
+    color: var(--bg-black);
+    padding-top: 10px;
+    justify-content: center;
+}
+.fas
+{
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-black);
+}
+.logo .circle-red
+{
+    font-size: 10px;
+    background-color: var(--bg-black);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    color: var(--bg-yellow);
+    display: block;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+.menu
+{
+    display: flex;
+}
+.menu li
+{
+    padding-left: 30px;
+}
+.menu li a
+{
+    display: inline-block;
+    color: var(--bg-blue);
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--bg---bg-limegreen);
+    transition: 0.2s ease-in-out;
+}
+.menu li a:hover:after
+{
+    width: 100%;
+}
+.open-menu,.close-menu
+{
+    position: absolute;
+    color: var(--bg-black);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu
+{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu
+{
+    top: 20px;
+    right: 20px;
+}
+#check
+{
+    display: none;
+}
+header 
+{
+    text-align: center;
+    color: var(--bg-black);
+    background-color: var(--bg-yellow);
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 48px;
+}
+main
+{
+    display: block;
+}
+h3.hello
+{
+    font-size: 28px;
+    margin: 15px 0;
+}
+h3.hello span
+{
+    font-family: 'slaytanic', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--bg-shockingpink);
+}
+h3.my-profession
+{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.typing
+{
+    color: var(--bg-shockingpink);
+}
+.about .about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .personal-info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--bg-black);
+    border-bottom: 1px solid var(--bg---bg-limegreen);
+}
+.about .about-content .personal-info .info-item p span
+{
+    font-weight: 400;
+    color: var(--bg-shockingpink);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons
+{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.about .about-content .skills
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+.about .about-content .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .skills .skill-item h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--bg-black);
+    text-transform: capitalize;
+}
+.about .about-content .skills .skill-item .progress
+{
+    background-color: var(--bg-shockingpink);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item
+{
+    margin-bottom: 25px;
+}
+.about .about-content .skills .skill-item .progress .progress-in
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--bg---bg-limegreen);
+}
+.about .about-content .skills .skill-item .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: var(--bg-black);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about .about-content .education,
+.about .about-content .experience
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h3.title
+{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--bg-black);
+}
+.about .about-content .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline
+{
+    background-color: var(--bg-shockingpink);
+    padding: 30px 15px;
+    border: 1px solid var(--bg---bg-limegreen);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color:var(--bg---bg-limegreen);
+}
+.about .about-content .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--bg---bg-limegreen);
+}
+.about .about-content .timeline .timeline-date
+{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--bg-black);
+}
+.about .about-content .timeline .timeline-date .fa
+{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--bg-yellow);
+}
+.about .about-content .timeline .timeline-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--bg-black);
+}
+.portofolio .container
+{
+    padding-bottom:40px;
+}
+.portofolio .portofolio-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portofolio .portofolio-heading h2
+{
+    text-align: center;
+    color: var(--bg-black);
+    font-weight: 500;
+}
+.portofolio .container
+{
+    padding-bottom:40px;
+}
+.portofolio .portofolio-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.portofolio .portofolio-item-inner
+{
+    border: 6px solid var(--bg-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portofolio .portofolio-item-inner .portofolio-img img
+{
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+.video .container
+{
+    padding-bottom: 40px;
+}
+.video .video-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.video .video-heading h2
+{
+    color: var(--bg-black);
+    font-weight: 500;
+    text-align: center;
+}
+.video .video-item
+{
+    display: flex;
+    flex: auto;
+}
+.contact-title
+{
+    color: var(--bg-shockingpink);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title
+{
+    color: var(--bg-black);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon
+{
+    display: inline-block;
+    align-items: center;
+}
+.contact .contact-info-item .icon .fa
+{
+    font-size: 25px;
+    color: var(--bg-shockingpink);
+}
+.contact .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-black);
+    text-transform: capitalize;
+    margin: 15px 0 5px ;
+}
+.contact .contact-info-item p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--bg-black);
+    font-weight: 400;
+}
+.contact .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+
+}
+.contact .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+.contact .contact-form .form-item
+{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-blue);
+    border: 1px solid var(--bg---bg-limegreen);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--bg-black);
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px rgba(50,205,50);
+}
+.contact .contact-form .form-item textarea.form-control
+{
+    height: 140px;
+}
+.contact .contact-form .btn
+{
+    height: 50px;
+    padding: 0 50px;
+    cursor: pointer;
+}
