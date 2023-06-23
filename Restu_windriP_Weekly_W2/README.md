@@ -1,7 +1,7 @@
 #BUILD WITHOUT JS FOR HUMBERGER MENU TILL IT WORKS
 # Website Personal
 Website personal ini merupakan website yang bertujuan untuk memberi informasi berupa data diri yang dilengkapi fitur kepada pengunjung website tersebut untuk dapat langsung melakukan perekrutan kepada pemilik websitenya.
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)    ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)    ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)   ![PhotoShop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)    ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)    ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 
 ![alt text](https://github.com/RevoU-FSSE-2/week-2-spongerest/blob/main/Restu_windriP_Weekly_W2/images/SS%20W2%201.png?raw=true)
 ![alt text](https://github.com/RevoU-FSSE-2/week-2-spongerest/blob/main/Restu_windriP_Weekly_W2/images/SS%20W2%202.png?raw=true)
